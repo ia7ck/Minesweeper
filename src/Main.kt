@@ -137,7 +137,7 @@ fun main() {
                 continue
             }
             ms.explore(y, x)
-            if (!ms.userLose()) ms.printBoard()
+            if (!ms.userLose() && !ms.userWin()) ms.printBoard()
         } else {
             println("Invalid command. Command should be 'mine' or 'free'.")
         }
